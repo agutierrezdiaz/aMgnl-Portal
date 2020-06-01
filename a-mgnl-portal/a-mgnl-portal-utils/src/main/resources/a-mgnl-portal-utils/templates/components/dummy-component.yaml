@@ -1,0 +1,2 @@
+templateScript: /a-mgnl-portal-utils/templates/components/dummy-component.ftl
+renderType: freemarker

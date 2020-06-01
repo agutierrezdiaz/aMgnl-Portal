@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>es.anonymity.project</groupId>
 	<artifactId>a-mgnl-portal</artifactId>
 	<name>a-mgnl-portal (parent pom)</name>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${a.portal.version}</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<magnoliaBundleVersion>6.2.1</magnoliaBundleVersion>
 		<javaVersion>1.8</javaVersion>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<a.portal.version>0.0.1-SNAPSHOT</a.portal.version>
+		<a.portal.utils>0.0.1-SNAPSHOT</a.portal.utils>
 	</properties>
 
 	<!-- Fill the following in, so you can use the release plugin -->
 	<scm>
-		<connection />
-		<developerConnection />
-		<url />
+		<connection/>
+		<developerConnection/>
+		<url/>
 	</scm>
 
 	<dependencyManagement>
@@ -94,5 +96,6 @@
 
 	<modules>
 		<module>a-mgnl-portal-webapp</module>
-	</modules>
+    <module>a-mgnl-portal-utils</module>
+  </modules>
 </project>

@@ -1,0 +1,10 @@
+templateScript: /a-mgnl-portal-utils/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: a-mgnl-portal-utils:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: a-mgnl-portal-utils:components/dummy-component

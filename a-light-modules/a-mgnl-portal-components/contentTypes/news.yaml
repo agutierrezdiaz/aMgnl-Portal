@@ -1,0 +1,23 @@
+datasource:
+  workspace: news
+  rootPath: /
+  autoCreate: true
+ 
+model:
+  nodeType: mgnl:news
+  properties:
+    - name: jcrName
+      required: true
+    - name: title
+      required: true
+      i18n: true
+    - name: description
+      type: richText
+      i18n: true
+    - name: date
+      type: Date
+    - name: image
+      type: asset
+    - name: link
+    - name: textLink
+      i18n: true

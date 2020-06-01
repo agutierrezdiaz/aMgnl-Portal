@@ -1,0 +1,13 @@
+cssFiles:
+  roboto-condensed:
+    addFingerPrint: true
+    link: https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700
+    media: all
+  isdegu:
+    addFingerPrint: true
+    link: /.resources/a-mgnl-portal-components/webresources/css/a-portal.css
+    media: all
+jsFiles:
+  #JavaScript files configuration
+imaging: 
+  #Imaging variations configuration

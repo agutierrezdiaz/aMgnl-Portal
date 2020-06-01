@@ -1,0 +1,35 @@
+!content-type:news
+name: news
+icon: icon-templating-app
+subApps:
+  detail:
+    editor:
+      form:
+        tabs:
+          default:
+            name: newsDetailsTab
+            fields:
+              link:
+                $type: switchableField
+                field:
+                   $type: optionListDatasource
+                   options:
+                     - name: external
+                       selected: true
+                       value: external
+                     - name: internal
+                       value: interna
+                itemProvider:
+                  $type: jcrChildNodeProviderl
+                forms:
+                  - name: external
+                    properties: 
+                       external:
+                          $type: textField
+                  - name: internal
+                    properties:
+                       internal:
+                       $type: linkField
+                       chooser:
+                          workbenchChooser:
+                             appName: website
